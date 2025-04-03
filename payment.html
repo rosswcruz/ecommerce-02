@@ -149,7 +149,7 @@ bottom: 0;
 left: 0;
 right: 0;
 padding: 0.75rem 1.25rem!important;
-background-color: rgba(0,0,0,.03)!important;
+background-color: rgba(0,0,0,0.1)!important;
 border-top: none!important;
 }
 .buynow-button-white {
@@ -395,8 +395,8 @@ font-weight: 600!important;
 border: 1px solid rgba(0,0,0,.125)!important;
 border-radius: 0!important;
 }
-.common-button:focus {
-outline: 5px auto -webkit-focus-ring-color;
+button:focus {
+outline: 5px auto -webkit-focus-ring-color!important;
 }
 </style>
 
@@ -497,9 +497,9 @@ Quantity: 1
 </ul>
 </div>
 <div class="button-container flex">
-<div class="common-button" id="upilink">
+<button class="common-button" id="upilink" type="submit">
 Place your Order and Pay
-</div>
+</button>
 <a class="commonXY" id="upiXY" href="#" target="_self" style="position: absolute; left: -9999px; transform: scale(0);"></a>
 </div>
 </div>
